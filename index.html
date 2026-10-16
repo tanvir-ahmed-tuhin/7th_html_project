@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>তানভীর | Flutter ও ওয়েব ডেভেলপার</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fc;--card:#ffffff;--text:#1b1f2a;--muted:#5d6577;--accent:#4f46e5;--accent-text:#ffffff;--border:#e3e6f0;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1220;--card:#181c30;--text:#eef0f8;--muted:#a3a9c0;--accent:#8b87ff;--accent-text:#0f1220;--border:#2a2f4a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1220;--card:#181c30;--text:#eef0f8;--muted:#a3a9c0;--accent:#8b87ff;--accent-text:#0f1220;--border:#2a2f4a;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Hind Siliguri',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.7}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+nav b{font-size:1.2rem}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+nav a:hover{color:var(--accent)}
+.hero{padding:60px 0 50px}
+.hero small{color:var(--accent);font-weight:700}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.25;margin:8px 0 14px}
+.hero p{color:var(--muted);max-width:560px;margin-bottom:26px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-text);padding:11px 24px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:var(--text);border:1px solid var(--border);margin-left:8px}
+section{padding:40px 0}
+h2{font-size:1.5rem;margin-bottom:18px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{background:var(--card);border:1px solid var(--border);padding:6px 16px;border-radius:999px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px}
+.card h3{margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.card em{display:inline-block;margin-top:10px;color:var(--accent);font-style:normal;font-size:.85rem}
+.contact p{color:var(--muted);margin-bottom:18px}
+footer{text-align:center;color:var(--muted);padding:30px 0;border-top:1px solid var(--border);margin-top:30px;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <b>তানভীর</b>
+    <div><a href="#about">পরিচিতি</a><a href="#projects">প্রজেক্ট</a><a href="#contact">যোগাযোগ</a></div>
+  </nav>
+
+  <header class="hero">
+    <small>👋 হ্যালো, আমি</small>
+    <h1>তানভীর<br>Flutter ও ওয়েব ডেভেলপার</h1>
+    <p>আমি একজন শিক্ষার্থী, যে সুন্দর ও ব্যবহারবান্ধব মোবাইল অ্যাপ এবং ওয়েবসাইট বানাতে ভালোবাসে।</p>
+    <a class="btn" href="#projects">আমার কাজ দেখুন</a>
+    <a class="btn alt" href="#contact">যোগাযোগ করুন</a>
+  </header>
+
+  <section id="about">
+    <h2>পরিচিতি</h2>
+    <p style="color:var(--muted);margin-bottom:18px">বাংলাদেশে থাকি, পড়াশোনার পাশাপাশি Flutter দিয়ে অ্যাপ এবং HTML, CSS, JavaScript দিয়ে ওয়েব পেজ ডেভেলপ করি। নতুন কিছু শিখে সেটা হাতে-কলমে প্রয়োগ করতে আমার ভালো লাগে।</p>
+    <div class="skills"><span>Flutter</span><span>Dart</span><span>Firebase</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI ডিজাইন</span></div>
+  </section>
+
+  <section id="projects">
+    <h2>প্রজেক্ট</h2>
+    <div class="grid">
+      <div class="card"><h3>Al Quran App</h3><p>Flutter দিয়ে বানানো আল-কুরআন অ্যাপ, Firebase ইন্টিগ্রেশনসহ।</p><em>Flutter · Firebase</em></div>
+      <div class="card"><h3>Daraz-স্টাইল ই-কমার্স UI</h3><p>Daraz-এর আদলে তৈরি আধুনিক ই-কমার্স অ্যাপের ইউজার ইন্টারফেস।</p><em>Flutter · UI</em></div>
+      <div class="card"><h3>Food Delivery App</h3><p>ফুড ডেলিভারি অ্যাপ, যেটাকে প্রোডাকশন-রেডি করার কাজ চলছে।</p><em>Flutter</em></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>যোগাযোগ</h2>
+    <p>নতুন প্রজেক্ট বা কাজের ব্যাপারে কথা বলতে চাইলে জানান।</p>
+    <a class="btn" href="mailto:you@example.com">ইমেইল করুন</a>
+  </section>
+
+  <footer>© 2026 তানভীর। সর্বস্বত্ব সংরক্ষিত।</footer>
+</div>
+</body>
+</html>
